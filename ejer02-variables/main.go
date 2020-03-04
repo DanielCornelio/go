@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 var numero int
 var texto string
@@ -11,6 +14,8 @@ func main() {
 
 	var moneda float64 = 0
 	numero2 = int(moneda)
+
+	texto = strconv.Itoa(int(moneda))
 
 	fmt.Println(numero2)
 	fmt.Println(numero3)
